@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attachment Application</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form id="the-form">
+        <p><strong>PERSONAL DETAILS:</strong></p>
+        <div class="form-parts">
+            <label for="firstname">Firstname:</label>
+            <input type="text" name="firstname" id="firstname" required>
+            <span class="error-message" id="firstnameError"></span>
+            
+
+            <label for="lastname">Lastname:</label>
+            <input type="text" name="lastname" id="lastname" required>
+            <span class="error-message" id="lastnameError"></span>
+            
+
+            <label for="contact">Contact</label>
+            <input type="number" name="contact" id="contact" required>
+            <span class="error-message" id="contactError"></span>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <span class="error-message" id="emailError"></span>
+            
+        </div>
+            <p><strong>SCHOOL DETAILS:</strong></p>
+        <div class="form-parts">
+            <label for="university-name">University Name:</label>
+            <input type="text" name="university-name" id="university-name" required>
+            <span class="error-message" id="universityNameError"></span>
+            
+            <label for="course-of-study">Course of study:</label>
+            <input type="text" name="course-of-study" id="course-of-study" required>
+            <span class="error-message" id="courseOfStudyError"></span>
+            
+            <label for="year-of-study">Year of study:</label>
+            <input type="number" name="year-of-study" id="year-of-study" required>
+            <span class="error-message" id="yearOfStudyError"></span>
+            
+        </div>
+        <p><strong> DOCUMENTS TO UPLOAD:</strong></p>
+        <ol type="1"> 
+            <li>A Resume</li>
+            <li>Cover letter</li>
+            <li>Insurance cover</li>
+            <li> Copy of Identity card</li>
+        </ol>
+        <div class="form-parts">
+            <label for="file">Upload File:</label>
+            <input type="file" name="file" id="file" multiple required>
+            <span class="error-message" id="fileError"><strong>File is required and must be in a valid type (PDF only)</strong></span>
+            <progress id="fileprogress" value="0" max="100"></progress>
+            <div id="filepreview"></div>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+</html>
